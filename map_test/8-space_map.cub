@@ -1,0 +1,14 @@
+R 1280 720
+
+NO ./textures/bluestone.xpm
+SO ./textures/mossy.xpm
+WE ./textures/redbrick.xpm
+EA ./textures/colorstone.xpm
+S ./textures/pillar.xpm
+F  240,0,120
+C  0,96,0 
+
+
+111
+1N 1
+111

@@ -1,0 +1,15 @@
+R 1280 720
+
+NO ./textures/mandatory/bluestone.xpm
+SO ./textures/mandatory/mossy.xpm
+WE ./textures/mandatory/redbrick.xpm
+EA ./textures/mandatory/colorstone.xpm
+S ./textures/mandatory/pillar.xpm
+F  240,0,120
+C  0,96,0 
+
+111111
+110101
+100W01
+100001
+111111
