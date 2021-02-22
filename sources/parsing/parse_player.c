@@ -21,8 +21,8 @@ int		is_player(char c)
 
 void	set_player(t_parsing *parsing, int i, int j, int *count)
 {
-	parsing->me.posx = i + 0.5;
-	parsing->me.posy = j + 0.5;
+	parsing->me.posx = (double)i + 0.5;
+	parsing->me.posy = (double)j + 0.5;
 	parsing->me.direction = parsing->map[i][j];
 	parsing->me.hp = 100;
 	parsing->me.score = 0;

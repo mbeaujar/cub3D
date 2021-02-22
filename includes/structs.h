@@ -36,8 +36,8 @@ typedef struct	s_entity
 
 typedef struct	s_player
 {
-	int			posx;
-	int			posy;
+	double		posx;
+	double		posy;
 	int			direction;
 	int			hp;
 	int			score;

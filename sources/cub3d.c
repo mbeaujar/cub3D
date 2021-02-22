@@ -31,6 +31,9 @@ void	mlx_create_image(t_game *game)
 
 void	parsing(int argc, char **argv, t_game *game)
 {
+	int x;
+	int y;
+
 	game->file_bmp = 0;
 	arguments(argc, argv, game);
 	set_struct(&game->parsing);
@@ -38,7 +41,9 @@ void	parsing(int argc, char **argv, t_game *game)
 	player_dir(&game->wall, &game->parsing.me);
 	game->vars.mlx = mlx_init();
 	set_game(&game->wall, &game->parsing, &game->sprite, game);
-	game->parsing.map[game->parsing.me.posx][game->parsing.me.posy] = '0';
+	x = (int)game->parsing.me.posx;
+	y = (int)game->parsing.me.posy;
+	game->parsing.map[x][y] = '0';
 	game->vars.img = mlx_new_image(game->vars.mlx,
 			game->wall.resolutionx, game->wall.resolutiony);
 	game->win.addr = mlx_get_data_addr(game->vars.img,

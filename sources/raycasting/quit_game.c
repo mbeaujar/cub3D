@@ -36,8 +36,8 @@ void	clear_mlx_part_2(t_game *game)
 		mlx_destroy_image(game->vars.mlx, game->wall.image[11].text);
 	if (game->wall.image[12].text != NULL)
 		mlx_destroy_image(game->vars.mlx, game->wall.image[12].text);
-	//mlx_loop_end(game->vars.mlx);
-	//mlx_destroy_display(game->vars.mlx);
+	mlx_loop_end(game->vars.mlx);
+	mlx_destroy_display(game->vars.mlx);
 	free(game->vars.mlx);
 }
 
